@@ -42,7 +42,7 @@ try{
     x.fillStyle='#fff';x.beginPath();x.moveTo(sz*0.40,sz*0.30);x.lineTo(sz*0.72,sz*0.50);x.lineTo(sz*0.40,sz*0.70);x.closePath();x.fill();
     return c.toDataURL('image/png');
   };
-  var man={name:'Viora Media — AI-аудит YouTube',short_name:'Viora',start_url:'./',scope:'./',display:'standalone',background_color:'#0A0A0A',theme_color:'#FF2D55',
+  var man={name:'Viora Media — AI-аудит YouTube',short_name:'Viora',start_url:(location.origin+location.pathname),scope:(location.origin+location.pathname),display:'standalone',background_color:'#0A0A0A',theme_color:'#FF2D55',
     icons:[{src:mIcon(192),sizes:'192x192',type:'image/png'},{src:mIcon(512),sizes:'512x512',type:'image/png'}]};
   if(location.protocol!=='file:'){
     var ml=D.createElement('link');ml.rel='manifest';ml.id='vManifest';
